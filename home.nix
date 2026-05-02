@@ -20,6 +20,7 @@
     krita
     localsend
     satty
+    pavucontrol
     
 
   ];
