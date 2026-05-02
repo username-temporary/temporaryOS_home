@@ -1,0 +1,42 @@
+%friendly reminder: press ctrl l after :w to clear the screen
+\documentclass{article}
+%setting up color theme (best to delete this if you're sending it to a proffesor) 
+\usepackage{xcolor}
+\pagecolor[rgb]{0.1,0.1,0.2}
+\color[rgb]{1,1,0.8}
+%setting up multiple languages
+\usepackage{polyglossia}
+\usepackage{fontspec}
+\setmainlanguage{english}
+\setotherlanguage{greek}
+%setting up fonts
+\setmainfont{FreeSerif}
+\newfontfamily\greekfont{FreeSerif}
+%math packages
+\usepackage{amsmath}
+
+\title{template}
+\author{\textgreek{όνομα}}
+\date {2026-02-22}
+\begin{document}
+  \maketitle
+
+  \newpage
+  \section{Section}
+    example of text followed by an equation
+    $\frac{a*b^2}{c^2}$
+
+  \subsection{SubSection}
+    this is how subsections are formattedx
+  \subsubsection{SubSubSeciton Title}
+    you can also have subsubsections
+    
+  \section{math}
+    \begin{align*}
+      f(x)=x^2\\ 
+      x=5\\
+      \frac{36^39}{y+x}
+    \end{align*}
+    use align for a series of equations
+
+\end{document}

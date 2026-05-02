@@ -1,0 +1,26 @@
+#!/usr/bin/env bash 
+
+set -e  
+#making sure we can properly use sudo
+echo "rebuild...."
+platform=$1
+commit_msg=$2
+if [ "$platform" == "-d" ] 
+then	echo "desktop-rebuild" 
+	sudo nixos-rebuild switch --flake .#temporaryOSDesktop  --show-trace --print-build-logs --verbose
+else sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
+fi
+if [ "$?" -ne 0 ]
+  then echo "exiting because of error during rebuild"
+
+  exit
+fi
+  
+
+echo "commiting everything to git"
+sudo git add . 
+gen=$(nixos-rebuild list-generations | grep True|head -c 5 )
+sudo git commit -m "$commit_msg generation: $gen"
+echo "done, gen $gen has been succsessfully commited with commit message:"
+echo "\"$commit_msg\""
+exit

@@ -1,0 +1,10 @@
+#!/bin/bash
+while true; do
+  
+sleep 5
+  (WALLPAPER=$(ls -1 ~/.config/home-manager/wallpaper | sort -R | head -n 1) 
+  hyprctl hyprpaper preload ~/.config/home-manager/wallpaper/$WALLPAPER  
+  hyprctl hyprpaper wallpaper ,~/.config/home-manager/wallpaper/$WALLPAPER)
+  sleep 200 
+done
+

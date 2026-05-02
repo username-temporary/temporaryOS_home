@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "setting up latexmk"
+latexmk -pvc -silent -xelatex $1.tex &
+echo "setting up pdf viewer zathura"
+zathura $1.pdf &
+
+echo "remember to close the jobs created by this script when you're done"
