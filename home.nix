@@ -21,6 +21,7 @@
     localsend
     satty
     pavucontrol
+    crosspipe
     
 
   ];
