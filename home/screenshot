@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DIR=~/Pictures/Screenshots
+FILE="$DIR/Screenshot-$(date +%F_%H-%M-%S).png"
+
+mkdir -p "$DIR"
+
+# GUI crop tool
+flameshot gui -r > "$FILE"
+
+# copy to clipboard
+xclip -selection clipboard -t image/png -i "$FILE"
