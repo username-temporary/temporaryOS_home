@@ -25,27 +25,23 @@
     
 
   ];
+  nix.gc={
+    automatic=true;
+    dates= "weekly";
+  };
  #bashrc configuration
 #
-# programs={
-#   bash={ 
-#     enable=true;
-#     initExtra=''
-#     export PS1='\[\e[96;1m\]|\[\e]0;\u@\h: \w\a\]\u@:\[\e[22m\]\W\[\e[1m\]|\$\[\e[0m\]' 
-#     fastfetch 
-#     '';
-#   };
-#   
-#     kitty={
-#       enable=true;
-
-#       settings={
-#         dynamic_background_opacity= "no";
-#         background_opacity = "0.85";
-#         background_blur="0";
-#       };
-#     };
-#  };
+  programs={
+      kitty={
+        enable=true;
+  
+        settings={
+          dynamic_background_opacity= "no";
+          background_opacity = "0.85";
+          background_blur="0";
+        };
+      };
+  };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
