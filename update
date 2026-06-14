@@ -3,7 +3,7 @@ sudo pacman -Syu
 sudo -i nix-channel --update
 nix-channel --update
 home-manager switch
-flatpak update
+flatpak update -y
 git add . 
 git commit -m " commit" 
 git push 
