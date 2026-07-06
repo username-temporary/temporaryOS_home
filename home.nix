@@ -48,6 +48,12 @@
     ".config/hypr/hyprland.conf".source=./home/hyprland.conf;
     ".config/waybar/config.jsonc".source=./home/waybar/config.jsonc;
     ".config/waybar/style.css".source=./home/waybar/style.css;
+    ".config/polybar/config.ini".source=./home/polybar/config.ini;
+    ".config/polybar/scripts/vpn-status.sh".source=./home/polybar/scripts/vpn-status.sh;
+    ".config/polybar/scripts/vpn-toggle.sh".source=./home/polybar/scripts/vpn-toggle.sh;
+    ".config/i3/config".source=./home/i3/config;
+    ".config/i3/workspaces".source=./home/i3/workspaces;
+
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
