@@ -22,6 +22,7 @@
     satty
     pavucontrol
     crosspipe
+    scrot
     
 
   ];

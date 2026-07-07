@@ -82,7 +82,7 @@ bindsym $mod+v exec ~/.config/home-manager/home/waybar/vpn-toggle.sh
 # SCREENSHOT
 #################################
 
-bindsym Ctrl+p exec ~/.config/home-manager/home/screenshot
+bindsym Ctrl+p exec scrot -s -f ~/Pictures/Screenshots/'%Y-%m-%d-%H%M%S_$wx$h.png' -b -e 'xclip -selection clipboard -t image/png -i $f'
 
 #################################
 # FOCUS MOVEMENT
