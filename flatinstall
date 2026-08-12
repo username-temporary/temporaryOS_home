@@ -8,3 +8,5 @@ flatpak install flathub org.DolphinEmu.dolphin-emu
 flatpak install flathub com.steamgriddb.SGDBoop
 flatpak install flathub io.github.philipk.boilr
 echo "done"
+echo "fake commit just to make sure shit is going through"
+
