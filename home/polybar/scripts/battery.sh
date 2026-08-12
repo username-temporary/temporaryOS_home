@@ -12,7 +12,14 @@ fi
 CAPACITY=$(cat /sys/class/power_supply/"$BAT"/capacity 2>/dev/null)
 STATUS=$(cat /sys/class/power_supply/"$BAT"/status 2>/dev/null)
 
-if [ "$STATUS" = "Charging" ]; then filter="⚡ " ; else filter=""; fi
+if [ "$STATUS" = "Charging" ];then 
+    filter="%{F#ffff00}C" ; 
+elif [ "$CAPACITY" -lt 20 ]; then 
+     filter="%{F#ff1111}";
+else 
+    filter="%{F#00ff00}";
+fi
 
 # Print output for Polybar
-echo "${filter}${CAPACITY}%"
+echo " ${filter}${CAPACITY}%%{F-}"
+
