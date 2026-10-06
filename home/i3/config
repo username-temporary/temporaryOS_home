@@ -29,8 +29,7 @@ exec --no-startup-id ~/.config/home-manager/home/random_wallpaper_i3
 exec --no-startup-id dunst
 exec --no-startup-id easyeffects
 exec --no-startup-id crosspipe
-exec --no-startup-id xset -b
-
+exec --no-startup-id xset -b # motherboard beep off 
 
 exec --no-startup-id steam -silent
 exec --no-startup-id picom
