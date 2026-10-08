@@ -24,6 +24,7 @@
     crosspipe
     scrot
     fzf
+    vi
     bash-completion
     
 
