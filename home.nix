@@ -23,6 +23,8 @@
     pavucontrol
     crosspipe
     scrot
+    fzf
+    bash-completion
     
 
   ];
