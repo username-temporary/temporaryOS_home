@@ -24,8 +24,9 @@
     crosspipe
     scrot
     fzf
-    vi
+    vim
     bash-completion
+    tealdeer
     
 
   ];
