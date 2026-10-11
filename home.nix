@@ -36,7 +36,19 @@
   };
  #bashrc configuration
 #
+
   programs={
+
+      bash={
+      enable = true;
+      initExtra =''
+        [[ $- != *i* ]] && return
+
+        alias ls='ls --color=auto'
+        alias grep='grep --color=auto'
+        export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]][\[\e[33m\]\@\[\e[m\]:\[\e[35m\]\w\[\e[m\]]\n"
+      '';
+    };
       kitty={
         enable=true;
   
@@ -56,6 +68,7 @@
     ".config/polybar/config.ini".source=./home/polybar/config.ini;
     ".config/polybar/scripts/vpn-status.sh".source=./home/polybar/scripts/vpn-status.sh;
     ".config/polybar/scripts/vpn-toggle.sh".source=./home/polybar/scripts/vpn-toggle.sh;
+    ".config/polybar/scripts/notification-status.sh".source=./home/polybar/scripts/notification-status.sh;
     ".config/i3/config".source=./home/i3/config;
     ".config/i3/workspaces".source=./home/i3/workspaces;
 
