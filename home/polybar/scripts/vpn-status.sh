@@ -7,7 +7,7 @@ result=$?
 
 if [ $result == 1 ] 
 then
-  echo "%{F#ff4444}vpn%{F-}" #vpn is off
+  echo "%{F#ff4242}vpn%{F-}" #vpn is off
 else
-  echo "%{F#00ff00}vpn%{F-}" #vpn is on
+  echo "%{F#109EC9}vpn%{F-}" #vpn is on
 fi
