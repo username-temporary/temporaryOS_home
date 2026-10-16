@@ -7,6 +7,7 @@ flatpak install flathub xyz.z3ntu.razergenie
 flatpak install flathub org.DolphinEmu.dolphin-emu
 flatpak install flathub com.steamgriddb.SGDBoop
 flatpak install flathub io.github.philipk.boilr
+flatpak install flathub com.pokemmo.PokeMMO
 echo "done"
 
 
